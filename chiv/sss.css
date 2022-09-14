@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+
+body{
+    font-family: 'MedievalSharp', cursive;
+    background-image: url("img/back5.png");
+    background-position: fixed;
+    
+}
+
+.box{
+    padding: 30px;
+    width: 80%;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.266);
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+    text-align: center;
+    line-height: 1.6rem;
+    color: #cf680085;
+    text-shadow: #fff 2px 2px ;
+    
+ }
+
+
+ .text{
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 5px;
+ }
+
+
+ 
+ .box .heading{
+    font-family: 'MedievalSharp', cursive;
+    font-size: 2.85rem;
+    text-shadow: #fff 2px 2px ;
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px;
+    color: rgb(250, 8, 8);
+    text-align: center;
+ }
+ 
+ .faqs{
+    padding: 0px 20px 20px;
+ }
+ 
+ ::-webkit-details-marker{
+    float: right;
+    margin-top: 3px;
+ }
+ 
+ details{
+    background: #f6f6f627;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+ }
+ 
+ details summary{
+    outline: none;
+ }
+ 
+ footer{
+    margin: 0;
+ }
+
+ .box p {
+   display: inline-block;
+   text-shadow: none;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*Media Adjust*/
+
+ @media screen and (min-width: 800px) {
+   .nav-header img {
+     width: 100%;
+   }
+
+   
+
+   .nav-center {  
+     justify-content: space-between;
+     max-width: 950px;
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+     height: 80px;
+     padding: 1rem;
+   }
+   .nav-header {
+     padding: 0;
+     animation: slideInFromLeft 0.5s ease-out;
+   }
+   .nav-toggle {
+     display: none;
+   }
+   .links {
+     height: auto;
+     display: flex;
+     
+   }
+   .links a {
+     padding: 0;
+     margin: 0 0.5rem;
+     font-size: 1.1rem;
+   }
+   .links a:hover {
+     padding: 0;
+     background: transparent;
+   }
+   .social-icons {
+     display: flex;
+     font-size: 1.4rem;
+     animation: slideInFromTop 0.5s ease-out;
+   }
+   .social-icons a {
+     margin: 0 0.5rem;
+     color: #f57802;
+     transition: all .5s all;
+     
+   }
+   .social-icons a:hover {
+     color: var(--clr-orange);
+     
+   }
+   .buy{
+     animation: slideInFromRight 0.5s ease-out;
+     text-align: center;
+   }
+}
+   @media(max-width: 800px) {
+   .buy{
+       display:none;
+
+       
+   }
+   .hidebig{
+     display:inline-block;
+     padding:0 1rem 0 1rem;
+   }
+
+   .section{
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 2px;
+   }
+   }
+
+
+   @media(max-width: 980px){
+   .wide1text {
+       font-size: 1.1rem;
+     }
+   
+   .wide1text h3{
+     font-size: 1.5rem;
+   }
+   .knighttext p, .samuraytext p, .vikingtext p{
+     font-size: 1.1rem;
+   }
+   .sli h1{
+     font-size: 3.4rem;
+   }
+
+   .showcase{
+     margin-top: 150px;
+   }
+   .showcase img{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+   }
+
+   br{
+     display: none;
+   }
+ }
+
+ @media(max-width: 810px){
+   .knight, .samuray, .viking, .wide1{
+     grid-template-columns: 1fr;
+     width: 90%;
+     
+   }
+   .knight img, .samuray img , .viking img , .wide1 img{
+     width: 50%;
+   }
+ }
+
+ @media(max-width:750px){
+   .showcase img{
+     width: 100%;
+     
+   }
+
+   .knight p, .samuray p, .viking p, .wide1 p{
+     font-size: 0.7rem;
+     line-height: 1.5rem;
+   }
+
+   .knight h3, .samuray h3, .viking h3, .wide1 h3{
+     font-size:1.1rem;
+   }
+   .wide1 a{
+     
+     font-size: 1.0rem;
+   }
+
+   .sli h1{
+     font-size: 2rem;
+   }
+   .kayit{
+     font-size: 0.6rem;
+     line-height: 1.5rem;
+     width: 100%;
+     display: block;
+   }
+   .kayit img{
+     width: 100%;
+   }
+   .kayit br{
+     display:none;
+   }
+   .kayit h1{
+     font-size: 1.1rem;
+   }
+   .kayit a{
+     font-size: 1.5rem;
+   }
+   .footer h4{
+     font-size: 1.1rem;
+   }
+   .footer h1{
+     font-size: 1.1rem;
+     text-align: center;
+   }
+
+   .showcase .back{
+     
+     display: none;
+     visibility: hidden;
+   }
+   .backsmall{
+     visibility: visible;
+     display: block;
+     width: 100%;
+   }
+   
+ }
+ 
+
+
+
+
+   
+
+
+
+
+
+
+
+
+ 
